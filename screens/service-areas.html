@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed-dim": "#acc7ff",
+              "on-secondary-container": "#56607d",
+              "on-tertiary-container": "#ffffff",
+              "secondary-container": "#d2dcfe",
+              "on-tertiary-fixed-variant": "#43474b",
+              "on-secondary-fixed": "#101b34",
+              "on-surface-variant": "#424753",
+              "surface-container-highest": "#e5e2e1",
+              "on-primary-fixed": "#001a40",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed": "#dfe3e7",
+              "on-primary-fixed-variant": "#004491",
+              "surface-tint": "#005bbe",
+              "primary-fixed": "#d7e2ff",
+              "surface-dim": "#dcd9d9",
+              "secondary-fixed-dim": "#bcc6e7",
+              "surface-container-high": "#ebe7e7",
+              "surface-container": "#f0edec",
+              "outline-variant": "#c2c6d5",
+              "inverse-on-surface": "#f3f0ef",
+              "primary-container": "#2d74db",
+              "on-background": "#1c1b1b",
+              "error": "#ba1a1a",
+              "on-primary": "#ffffff",
+              "inverse-surface": "#313030",
+              "on-surface": "#1c1b1b",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed-variant": "#3c4661",
+              "on-primary-container": "#ffffff",
+              "primary": "#005bbc",
+              "surface-container-low": "#f6f3f2",
+              "tertiary-fixed-dim": "#c3c7cb",
+              "on-error": "#ffffff",
+              "secondary": "#545e7a",
+              "tertiary": "#595e62",
+              "error-container": "#ffdad6",
+              "background": "#fcf9f8",
+              "tertiary-container": "#72777a",
+              "surface-variant": "#e5e2e1",
+              "surface-bright": "#fcf9f8",
+              "on-error-container": "#93000a",
+              "secondary-fixed": "#dae2ff",
+              "on-tertiary-fixed": "#171c1f",
+              "surface": "#fcf9f8",
+              "outline": "#727784",
+              "surface-container-lowest": "#ffffff",
+              "inverse-primary": "#acc7ff"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+        .asymmetric-bleed {
+            grid-column: 1 / 9;
+        }
+        @media (max-width: 768px) {
+            .asymmetric-bleed {
+                grid-column: 1 / -1;
+            }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<nav class="bg-surface/80 dark:bg-zinc-900/80 backdrop-blur-xl fixed top-0 w-full z-50 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-6 py-4 max-w-full mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-zinc-900 dark:text-zinc-50 cursor-pointer" data-icon="menu">menu</span>
+<span class="text-xl font-bold uppercase tracking-tighter text-zinc-900 dark:text-zinc-50 font-headline">Telluride Spray Foam</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors font-headline" href="#">Home</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors font-headline" href="#">Services</a>
+<a class="text-blue-700 dark:text-blue-400 font-bold border-b-2 border-blue-700 font-headline" href="#">Service Areas</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors font-headline" href="#">Blog</a>
+</div>
+<button class="bg-primary text-on-primary px-5 py-2 rounded-md font-headline font-bold text-sm uppercase tracking-wider scale-95 active:scale-90 duration-200 transition-all">
+                Call Now
+            </button>
+</div>
+</nav>
+<main class="pt-24 min-h-screen">
+<!-- Hero Section / Editorial Header -->
+<section class="px-6 md:px-12 py-20 editorial-grid gap-y-12">
+<div class="col-span-12 md:col-span-8">
+<span class="label-md text-primary font-bold tracking-[0.2em] uppercase mb-4 block">Regional Coverage</span>
+<h1 class="text-6xl md:text-8xl font-headline font-extrabold tracking-tighter leading-[0.9] text-on-background mb-8">
+                    San Miguel <br/> <span class="text-outline text-transparent" style="-webkit-text-stroke: 1px var(--on-background);">County Expert</span>
+</h1>
+<p class="body-lg text-on-surface-variant max-w-xl text-lg leading-relaxed">
+                    Precision application for high-altitude environments. We provide thermal protection across the entire San Miguel Valley and surrounding high-country corridors.
+                </p>
+</div>
+<div class="col-span-12 md:col-span-4 flex items-end justify-end">
+<div class="bg-surface-container-low p-8 rounded-xl border-l-4 border-primary">
+<p class="font-headline font-bold text-2xl">Serving 8,750'+</p>
+<p class="text-sm opacity-70">Dedicated high-altitude specialists</p>
+</div>
+</div>
+</section>
+<!-- Detailed Service Areas List -->
+<section class="bg-surface-container-low py-24 px-6 md:px-12">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+<div>
+<h2 class="text-4xl font-headline font-bold tracking-tight mb-12">Communities We Serve</h2>
+<div class="space-y-0">
+<!-- Custom List without lines as per design system -->
+<div class="group py-6 hover:bg-surface-container transition-colors px-4 rounded-lg flex items-center justify-between cursor-default">
+<span class="text-2xl font-headline font-medium">Telluride</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</div>
+<div class="group py-6 bg-surface-container-low hover:bg-surface-container transition-colors px-4 rounded-lg flex items-center justify-between cursor-default">
+<span class="text-2xl font-headline font-medium">Mountain Village</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</div>
+<div class="group py-6 hover:bg-surface-container transition-colors px-4 rounded-lg flex items-center justify-between cursor-default">
+<span class="text-2xl font-headline font-medium">Ophir</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</div>
+<div class="group py-6 bg-surface-container-low hover:bg-surface-container transition-colors px-4 rounded-lg flex items-center justify-between cursor-default">
+<span class="text-2xl font-headline font-medium">Rico</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</div>
+<div class="group py-6 hover:bg-surface-container transition-colors px-4 rounded-lg flex items-center justify-between cursor-default">
+<span class="text-2xl font-headline font-medium">Sawpit</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</div>
+<div class="group py-6 bg-surface-container-low hover:bg-surface-container transition-colors px-4 rounded-lg flex items-center justify-between cursor-default">
+<span class="text-2xl font-headline font-medium">Placerville</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- High Altitude Expertise Section -->
+<div class="bg-surface-container-lowest p-12 rounded-2xl shadow-sm self-start">
+<span class="material-symbols-outlined text-5xl text-primary mb-6" data-icon="landscape">landscape</span>
+<h3 class="text-3xl font-headline font-bold mb-6">Why Local Expertise Matters</h3>
+<div class="space-y-6 text-on-surface-variant leading-relaxed">
+<p>
+                            High-altitude insulation isn't just about R-value; it's about managing extreme vapor drive and dramatic temperature swings. At 8,000+ feet, the air density and moisture behavior differ significantly from sea-level applications.
+                        </p>
+<p>
+                            Our team understands the specific requirements for <strong>San Miguel County</strong> building codes and the unique thermal bridges found in mountain modern architecture. We use specialized foam formulations that maintain their cell integrity and insulating properties in the thin, cold air of the San Juan Mountains.
+                        </p>
+<ul class="space-y-4 pt-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span>Cold-weather curing expertise</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span>Snow-load thermal bridge mitigation</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span>High-altitude vapor barrier strategies</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Large Detailed Map Section -->
+<section class="py-24 px-6 md:px-12 max-w-full overflow-hidden">
+<div class="max-w-7xl mx-auto mb-16 text-center">
+<h2 class="text-4xl md:text-5xl font-headline font-bold tracking-tight">Full Coverage Map</h2>
+<p class="text-on-surface-variant mt-4">Exploring our footprint across the San Juan mountain range.</p>
+</div>
+<div class="relative w-full aspect-[21/9] bg-surface-container-high rounded-3xl overflow-hidden group">
+<div class="absolute inset-0 bg-cover bg-center grayscale contrast-125 opacity-40 mix-blend-multiply" data-alt="Topographic satellite view of the rocky mountain landscape around San Miguel County Colorado featuring rugged peaks and deep valleys" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCbCYkIeJ8wJCyRCuZbKYAQG6wkfs9TwFqhK8ccxOuyobuIE71ydUBmWJKyyr0sxOaNmSYmtyD8pDT5YOA98GJN-kTUUlz4ZcLGCkI7AqGbfftehbHeNU3kTzvA_H9eDV87ZICkgWXhTRUDX2-I_3VHX2_NMPIjEGrG2p-IlPI5ciNDHHyGKkN8Cv3jlmuBXa2-I3cyZgEGKNwvzEGDhua6yO8Uy2aj36LugjNFtcFNftIt1WUIdfRLH2sJZVl_kMZ3SJSgYufiE29X')"></div>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<!-- Illustrative Vector Overlay Style -->
+<div class="w-2/3 h-2/3 border-4 border-primary/20 rounded-full animate-pulse"></div>
+<div class="absolute w-1/2 h-1/2 border-2 border-primary/30 rounded-full"></div>
+</div>
+<!-- Map Markers -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<div class="bg-primary text-on-primary px-4 py-2 rounded-lg font-headline font-bold shadow-xl animate-bounce">
+                        Telluride HQ
+                    </div>
+<div class="w-1 h-12 bg-primary"></div>
+</div>
+<div class="absolute top-1/3 left-1/4">
+<div class="bg-white/90 backdrop-blur-md p-3 rounded-xl shadow-lg border-l-4 border-secondary flex flex-col gap-1">
+<span class="text-xs font-bold uppercase tracking-widest text-primary">Western Slope</span>
+<span class="font-headline font-bold">Placerville</span>
+</div>
+</div>
+<div class="absolute bottom-1/4 right-1/3">
+<div class="bg-white/90 backdrop-blur-md p-3 rounded-xl shadow-lg border-l-4 border-secondary flex flex-col gap-1">
+<span class="text-xs font-bold uppercase tracking-widest text-primary">Upper Valley</span>
+<span class="font-headline font-bold">Mountain Village</span>
+</div>
+</div>
+<!-- Interactive Legend -->
+<div class="absolute bottom-8 left-8 bg-zinc-900/90 text-white p-6 rounded-2xl backdrop-blur-md max-w-xs">
+<h4 class="font-headline font-bold text-lg mb-4">Service Radius</h4>
+<div class="flex items-center gap-4 mb-4">
+<div class="w-4 h-4 rounded-full bg-primary"></div>
+<span class="text-sm">Primary Service Area</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-4 h-4 rounded-full bg-secondary"></div>
+<span class="text-sm">Extended Reach Zone</span>
+</div>
+</div>
+<div class="absolute inset-0 cursor-crosshair" data-location="San Miguel County, Colorado" style=""></div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-6 md:px-12">
+<div class="max-w-5xl mx-auto bg-primary rounded-[2rem] p-12 md:p-20 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full translate-x-20 -translate-y-20 blur-3xl"></div>
+<div class="relative z-10">
+<h2 class="text-4xl md:text-6xl font-headline font-extrabold text-on-primary tracking-tighter mb-8">Ready for a warmer home?</h2>
+<p class="text-on-primary/80 text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
+                        Whether you are in the heart of Telluride or on a remote parcel in Rico, we bring the expertise to you.
+                    </p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-6">
+<button class="bg-on-primary text-primary px-10 py-4 rounded-md font-headline font-bold text-lg hover:bg-surface-container-low transition-all">
+                            Get a Custom Quote
+                        </button>
+<button class="border-2 border-on-primary/30 text-on-primary px-10 py-4 rounded-md font-headline font-bold text-lg hover:bg-on-primary/10 transition-all">
+                            Call Our Office
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-zinc-900 dark:bg-black w-full mt-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto font-['Inter'] text-sm leading-6">
+<div class="col-span-1 md:col-span-1">
+<span class="text-lg font-bold text-white block mb-6 font-headline">Telluride Spray Foam</span>
+<p class="text-zinc-400">Master insulation artisans serving the high-country peaks of Colorado.</p>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-white font-bold uppercase tracking-widest text-xs mb-2">Navigation</span>
+<a class="text-zinc-400 hover:text-white transition-colors underline" href="#">Services</a>
+<a class="text-white font-medium underline" href="#">Service Areas</a>
+<a class="text-zinc-400 hover:text-white transition-colors underline" href="#">Blog</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-white font-bold uppercase tracking-widest text-xs mb-2">Legal</span>
+<a class="text-zinc-400 hover:text-white transition-colors underline" href="#">Contact</a>
+<a class="text-zinc-400 hover:text-white transition-colors underline" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-white font-bold uppercase tracking-widest text-xs mb-2">Connect</span>
+<p class="text-zinc-400">San Miguel County, CO</p>
+<p class="text-blue-500 font-bold">(970) 555-FOAM</p>
+</div>
+</div>
+<div class="border-t border-zinc-800 px-8 py-6 max-w-7xl mx-auto">
+<p class="text-zinc-500 text-xs text-center">© 2024 Telluride Spray Foam. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

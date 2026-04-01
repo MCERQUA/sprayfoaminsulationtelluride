@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed-dim": "#acc7ff",
+              "on-secondary-container": "#56607d",
+              "on-tertiary-container": "#ffffff",
+              "secondary-container": "#d2dcfe",
+              "on-tertiary-fixed-variant": "#43474b",
+              "on-secondary-fixed": "#101b34",
+              "on-surface-variant": "#424753",
+              "surface-container-highest": "#e5e2e1",
+              "on-primary-fixed": "#001a40",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed": "#dfe3e7",
+              "on-primary-fixed-variant": "#004491",
+              "surface-tint": "#005bbe",
+              "primary-fixed": "#d7e2ff",
+              "surface-dim": "#dcd9d9",
+              "secondary-fixed-dim": "#bcc6e7",
+              "surface-container-high": "#ebe7e7",
+              "surface-container": "#f0edec",
+              "outline-variant": "#c2c6d5",
+              "inverse-on-surface": "#f3f0ef",
+              "primary-container": "#2d74db",
+              "on-background": "#1c1b1b",
+              "error": "#ba1a1a",
+              "on-primary": "#ffffff",
+              "inverse-surface": "#313030",
+              "on-surface": "#1c1b1b",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed-variant": "#3c4661",
+              "on-primary-container": "#ffffff",
+              "primary": "#005bbc",
+              "surface-container-low": "#f6f3f2",
+              "tertiary-fixed-dim": "#c3c7cb",
+              "on-error": "#ffffff",
+              "secondary": "#545e7a",
+              "tertiary": "#595e62",
+              "error-container": "#ffdad6",
+              "background": "#fcf9f8",
+              "tertiary-container": "#72777a",
+              "surface-variant": "#e5e2e1",
+              "surface-bright": "#fcf9f8",
+              "on-error-container": "#93000a",
+              "secondary-fixed": "#dae2ff",
+              "on-tertiary-fixed": "#171c1f",
+              "surface": "#fcf9f8",
+              "outline": "#727784",
+              "surface-container-lowest": "#ffffff",
+              "inverse-primary": "#acc7ff"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-surface/80 dark:bg-zinc-900/80 backdrop-blur-xl shadow-sm dark:shadow-none fixed top-0 w-full z-50">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant scale-95 active:scale-90 duration-200">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<span class="text-xl font-bold uppercase tracking-tighter text-zinc-900 dark:text-zinc-50 font-['Space_Grotesk']">Telluride Spray Foam</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-blue-600 transition-colors font-medium" href="#">Home</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-blue-600 transition-colors font-medium" href="#">Services</a>
+<a class="text-blue-700 dark:text-blue-400 font-bold border-b-2 border-blue-700" href="#">Blog</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-blue-600 transition-colors font-medium" href="#">Tools</a>
+</nav>
+<button class="bg-primary hover:bg-primary-container text-on-primary px-6 py-2 rounded-md font-bold tracking-tight scale-95 active:scale-90 duration-200 transition-all">
+                Call Now
+            </button>
+</div>
+</header>
+<main class="pt-24 pb-20">
+<!-- Hero Section: Editorial Header -->
+<section class="max-w-7xl mx-auto px-6 mb-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+<div class="lg:col-span-8">
+<span class="label-sm uppercase tracking-[0.2em] text-primary font-bold mb-4 block">Knowledge Hub</span>
+<h1 class="text-6xl md:text-8xl font-bold tracking-tighter leading-[0.9] text-on-background">
+                        TECHNICAL <br/>INSIGHTS.
+                    </h1>
+</div>
+<div class="lg:col-span-4 pb-2 border-l-4 border-primary pl-6">
+<p class="text-on-surface-variant body-lg leading-relaxed">
+                        The intersection of thermal science and high-altitude comfort. Explore our library of technical guides and efficiency calculators.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Tool Section: ROI Calculator (Asymmetric Layout) -->
+<section class="mb-32 bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-5">
+<div class="bg-surface-container-lowest p-10 shadow-sm border border-outline-variant/10">
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-primary text-3xl">construction</span>
+<h2 class="text-3xl font-bold tracking-tight">Insulation ROI Calculator</h2>
+</div>
+<div class="space-y-6">
+<div>
+<label class="label-md font-semibold text-on-surface-variant mb-2 block">Total Square Footage (sq.ft)</label>
+<input class="w-full bg-surface-container-highest border-none focus:ring-2 focus:ring-primary py-4 px-4 transition-all" placeholder="e.g. 2500" type="number"/>
+</div>
+<div>
+<label class="label-md font-semibold text-on-surface-variant mb-2 block">Current Monthly Energy Bill ($)</label>
+<input class="w-full bg-surface-container-highest border-none focus:ring-2 focus:ring-primary py-4 px-4 transition-all" placeholder="e.g. 350" type="number"/>
+</div>
+<button class="w-full bg-primary py-5 text-on-primary font-bold tracking-widest uppercase text-sm hover:brightness-110 transition-all">
+                                Calculate Potential Savings
+                            </button>
+</div>
+<div class="mt-10 p-6 bg-secondary-container/30 rounded-lg">
+<div class="flex justify-between items-end mb-2">
+<span class="text-xs uppercase font-bold text-on-secondary-container">Estimated Annual Savings</span>
+<span class="text-2xl font-black text-primary">$1,420*</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="w-[70%] h-full bg-gradient-to-r from-primary to-primary-container"></div>
+</div>
+<p class="text-[10px] text-on-surface-variant mt-4 italic">*Estimates based on average Telluride seasonal temperature fluctuations.</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7">
+<div class="relative">
+<img alt="Technical drawing" class="w-full h-[500px] object-cover grayscale opacity-80" data-alt="Blueprint schematic of a residential building showing thermal insulation layers with precise technical measurements and industrial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh8ZdmBYx8J49vzVGANEKgzTsqV1xI20xtbclNA09eZsrtW3ePz5x0SPJREEVUNs8-3s9Hma-WhLGdeFMiaMz9M2n8gDZp-4HWtlJ9Czh_fFKenMLLSRGDuCeIQW3ObS3_3k2GbFRAz-3ecT0iaOi2_MKMloIIdnZlTEIMNjxk7IJK5Av1aqaxWwd8qODZor3lW7nADGxaJn1t5IzPwZWstjFJ9ITspO4xnZcshdw_kQP15Eq3WVqy1yA7DfMLRe4Q5K9pQKjOmx3I"/>
+<div class="absolute -bottom-10 -left-10 bg-primary text-on-primary p-12 max-w-sm hidden md:block">
+<h3 class="text-2xl font-bold leading-tight mb-4">40% Average Reduction</h3>
+<p class="text-sm opacity-90 leading-relaxed">Our closed-cell spray foam creates an airtight seal that conventional fiberglass simply cannot achieve in alpine climates.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Blog Feed: Bento Grid Layout -->
+<section class="max-w-7xl mx-auto px-6">
+<div class="flex justify-between items-end mb-12">
+<h2 class="text-4xl font-bold tracking-tight">Technical Library</h2>
+<button class="text-primary font-bold border-b-2 border-primary pb-1 flex items-center gap-2 hover:gap-4 transition-all">
+                    View All Articles <span class="material-symbols-outlined">trending_flat</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Featured Article -->
+<article class="md:col-span-2 group cursor-pointer">
+<div class="relative overflow-hidden mb-6 h-[450px]">
+<img alt="Winter landscape" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Stunning aerial view of a snow-covered mountain cabin in a pine forest during a deep winter morning with blue tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAGtV_f6ZsrxiNlzCW1VniDTgYokPJxsGIlON6ZBf3gVSWg3MQJG7czMv9gVB6SZROTrPP1LD4ZiWBw_XLAKvxd0F6elfi4b9m6hhBrQ1-pjVT3Aizol9Nek-oHuc3SHie3kroHbFgvlH3k0KQDWreNevaAfCrNnqQoiavAKQWiZ43-poG6NQld96RSYybQ9ag1_OsffNLICNrAkETkPbQ9JEnH0ft6kqQcQa1l5pi9vpFbO5mcVS91aE4wVj2TqRyXEkLLveO8O2c"/>
+<div class="absolute top-6 left-6">
+<span class="bg-primary text-on-primary px-4 py-1 text-xs font-bold uppercase tracking-widest">Seasonal Guide</span>
+</div>
+</div>
+<h3 class="text-4xl font-bold tracking-tight mb-4 group-hover:text-primary transition-colors">Top 5 Benefits of Spray Foam in Winter</h3>
+<p class="text-on-surface-variant body-lg leading-relaxed max-w-2xl">
+                        Discover why Telluride homeowners are switching to spray foam to combat extreme freeze-thaw cycles and eliminate ice damming forever.
+                    </p>
+</article>
+<!-- Side Articles Stack -->
+<div class="space-y-12">
+<article class="group cursor-pointer">
+<div class="h-64 overflow-hidden mb-6">
+<img alt="Energy bills" class="w-full h-full object-cover grayscale transition-all group-hover:grayscale-0" data-alt="Detailed close-up of a digital smart thermostat displaying energy savings data with soft blue lighting in a modern home." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdedO6xHDeupxYh6sZqMfhPS4va5MbvsdomcuTn_WX-_g8mqmMAGg7KbL1JJQoJR6bmmvIF5Xhu189FxPQ0eqnOOAPloCFy51hkIG1Yz45johyV_5mdNv_rmCWcxv1Val0WP6RWVrildMnJU5WeXx_mUWe75CYmc8CJY2x22Yuiygs_AUOpVnxrHP7ueRFdXsbTDHBvJneQgAfgvwMIr-vmPYqh3qQAzFqVX-d5XTwW3kGNWKmEiy3QSnEIwr8c7X2zi68h2wDvEri"/>
+</div>
+<h3 class="text-2xl font-bold tracking-tight mb-2 group-hover:text-primary transition-colors">How to Cut Energy Bills by 40%</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">The science of thermal bridging and how to eliminate it through precision foam application.</p>
+</article>
+<article class="group cursor-pointer">
+<div class="h-64 overflow-hidden mb-6">
+<img alt="Construction worker" class="w-full h-full object-cover grayscale transition-all group-hover:grayscale-0" data-alt="Professional contractor in safety gear applying spray foam insulation to the interior of a modern wooden house frame." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6akJFeL2N8VJie8oPTJN35BHB98Pfxu9mfFl-6XVyyenETlu9Tw-OZUr6WeaH5hPsnJPOZnlPFkoHPfotk4hsEsshPQ-9n_P9RL2i3bluoXxBAuSDACR7C1T-afUU70sUtYDIbFwIBakqfLY8Lo0JbaNpYIUyLaT2M-AJpSCaHHG7h-7gHOdR8iyuMUUl1Xv_grQTy4GMiQO-DncrTT7CRpWbPR2RbDwdcIsXJV8FcvxXWcQimILbARj_sViQt0Z_miR99f-rRMU4"/>
+</div>
+<h3 class="text-2xl font-bold tracking-tight mb-2 group-hover:text-primary transition-colors">Open Cell vs. Closed Cell</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">A technical comparison for mountain environments. Which one is right for your project?</p>
+</article>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="max-w-7xl mx-auto px-6 mt-32">
+<div class="bg-zinc-900 p-12 md:p-20 text-white relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-20 pointer-events-none">
+<span class="material-symbols-outlined text-[300px] text-white">article</span>
+</div>
+<div class="relative z-10 max-w-2xl">
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-6">Subscribe to the Technical Feed.</h2>
+<p class="text-zinc-400 body-lg mb-10">Get the latest on energy tax credits, local building codes, and insulation technology delivered to your inbox.</p>
+<form class="flex flex-col md:flex-row gap-4">
+<input class="bg-zinc-800 border-none text-white px-6 py-4 flex-grow focus:ring-2 focus:ring-primary" placeholder="Your engineering email" type="email"/>
+<button class="bg-primary hover:bg-primary-container text-on-primary px-10 py-4 font-bold uppercase tracking-widest transition-all">Join List</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-zinc-900 dark:bg-black w-full mt-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto">
+<div class="space-y-6">
+<span class="text-lg font-bold text-white font-['Space_Grotesk']">Telluride Spray Foam</span>
+<p class="text-zinc-400 font-['Inter'] text-sm leading-6">Premium insulation solutions for high-altitude architecture. Licensed, insured, and local.</p>
+</div>
+<div class="space-y-4">
+<h4 class="text-white font-bold uppercase text-xs tracking-[0.2em] mb-6">Navigation</h4>
+<ul class="space-y-4">
+<li><a class="text-zinc-400 hover:text-white transition-colors underline font-['Inter'] text-sm leading-6" href="#">Services</a></li>
+<li><a class="text-zinc-400 hover:text-white transition-colors underline font-['Inter'] text-sm leading-6" href="#">Service Areas</a></li>
+<li><a class="text-white font-medium font-['Inter'] text-sm leading-6" href="#">Blog</a></li>
+<li><a class="text-zinc-400 hover:text-white transition-colors underline font-['Inter'] text-sm leading-6" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-white font-bold uppercase text-xs tracking-[0.2em] mb-6">Tools</h4>
+<ul class="space-y-4">
+<li><a class="text-zinc-400 hover:text-white transition-colors underline font-['Inter'] text-sm leading-6" href="#">ROI Calculator</a></li>
+<li><a class="text-zinc-400 hover:text-white transition-colors underline font-['Inter'] text-sm leading-6" href="#">R-Value Guide</a></li>
+<li><a class="text-zinc-400 hover:text-white transition-colors underline font-['Inter'] text-sm leading-6" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-white font-bold uppercase text-xs tracking-[0.2em] mb-6">Connect</h4>
+<div class="flex gap-4">
+<a class="text-zinc-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-zinc-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="text-zinc-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">call</span></a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-8 border-t border-zinc-800 text-center">
+<p class="text-zinc-500 text-xs">© 2024 Telluride Spray Foam. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
