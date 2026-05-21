@@ -97,3 +97,18 @@ Sitemap: https://sprayfoaminsulationtelluride.com/sitemap.xml
 
 **Status:** ⚠️ needs work
 **Headline:** Strong fundamentals (100% alt text, LocalBusiness + FAQ schema, flat crawlable architecture) undermined by stale sitemap, missing OG tags on 4 pages, placeholder picsum.photos images, and incomplete structured data.
+
+## 9. Structured Data Update — 2026-05-21
+
+**Files changed:**
+- `index.html` — added `@id: https://sprayfoaminsulationtelluride.com/#localbusiness` to the LocalBusiness schema so Service schemas on `services.html` can reference it as `provider`.
+- `services.html` — added BreadcrumbList JSON-LD and 4 Service JSON-LD blocks (Open Cell Spray Foam, Closed Cell Spray Foam, Attic Insulation, Crawl Space Encapsulation). Each Service has `name`, `description`, `serviceType`, `areaServed` (7 entries: 6 cities + San Miguel County), `provider` (linked by `@id` to the LocalBusiness on index.html), and `url` (deep-link to in-page anchor).
+- `service-areas.html` — added BreadcrumbList JSON-LD (Home → Service Areas).
+- `blog.html` — added BreadcrumbList JSON-LD (Home → Blog & Tools).
+- `contact.html` — added BreadcrumbList JSON-LD (Home → Contact) **and** fixed the ContactPage `url` from `https://telluridesprayfoam.com/contact` to the canonical `https://sprayfoaminsulationtelluride.com/contact` (issue #5 in section 7).
+
+**Schema types added:** BreadcrumbList × 4 pages, Service × 4 offerings.
+
+**Not added (intentional):** Review / AggregateRating — no real customer reviews exist in the codebase, so adding fabricated ratings would violate Google's structured-data guidelines.
+
+**Source of truth:** All Service descriptions, R-values, benefit bullets, and area-served lists were lifted verbatim from existing HTML (`services.html` article blocks and `index.html` LocalBusiness `areaServed`).
